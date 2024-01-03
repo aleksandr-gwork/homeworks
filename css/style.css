@@ -1,0 +1,229 @@
+@font-face {
+    font-family: Nunito-bold;
+    src: url(../fonts/Nunitobold.woff);
+    src: url(../fonts/Nunitobold.woff2);
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Nunito-bold, sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background: linear-gradient(90deg, transparent 50%, #F8F8FA 50%);
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background: #FFFFFF;
+    }
+}
+
+.header {
+    position: absolute;
+    top: 2.7rem;
+    left: 50%;
+    transform: translateX(-51%);
+}
+
+.main {
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 19.4rem 1rem;
+    gap: 2rem;
+}
+@media screen and (max-width: 500px) {
+    .main {
+        padding: 9.4rem 1rem;
+    }
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form-container {
+    max-width: 96rem;
+}
+
+.text {
+    max-width: 49.6rem;
+    margin-bottom: 7rem;
+}
+
+.title {
+    color: #000;
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 0.7rem;
+}
+@media screen and (max-width: 470px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 320px) {
+    .title {
+        font-size: 2.5rem;
+    }
+}
+
+.sub-title {
+    color: #636363;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+}
+@media screen and (max-width: 470px) {
+    .sub-title {
+        font-size: 1.2rem;
+    }
+}
+
+.form-container {
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 45.2rem;
+}
+
+.form .input {
+    padding: 0.5rem 0 0.5rem 0;
+    border: 0;
+    border-bottom: 0.1rem solid #C6C6C4;
+    outline: none;
+    margin-bottom: 2rem;
+    color: #323232;
+    font-size: 2.0rem;
+}
+
+.form .label {
+    color: #C6C6C4;
+}
+
+.agree {
+    color: #636363;
+    line-height: 2.7rem;
+    margin-top: 1.5rem;
+}
+
+.agree-text {
+    margin-left: 1rem;
+}
+
+.button {
+    border: 0;
+    width: 21rem;
+    height: 7rem;
+    border-radius: 4rem;
+    background: #DD3142;
+    padding: 2.1rem;
+    color: #FFF;
+    font-size: 2rem;
+    margin: 4.5rem auto 4.5rem auto;
+    cursor: pointer;
+}
+@media screen and (max-width: 470px) {
+    .button {
+        font-size: 1.5rem;
+        width: 19rem;
+        height: 4rem;
+        padding: 1.1rem;
+        margin: 2.5rem auto 2.5rem auto;
+    }
+}
+
+.question {
+    display: block;
+    text-align: center;
+    color: #636363;
+    max-width: 45.2rem;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 54.3rem;
+}
+@media screen and (max-width: 1200px) {
+    .right {
+        display: none;
+    }
+}
+
+.main-image {
+    padding-left: 1.1rem;
+    width: 100%;
+}
+
+/*Popup*/
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-container {
+    background: #FFF;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60rem;
+    border-radius: 2rem;
+}
+
+.popup-text {
+    text-align: center;
+}
+
+.popup-title {
+    color: #000;
+    font-size: 3.6rem;
+    margin-bottom: 0.7rem;
+}
+
+.popup-sub-title {
+    color: #636363;
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+}
+
+.popup-button {
+    border: 0;
+    width: 21rem;
+    height: 7rem;
+    border-radius: 4rem;
+    background: #DD3142;
+    padding: 2.1rem;
+    color: #FFF;
+    font-size: 2rem;
+    margin: 4.5rem auto 1rem;
+    cursor: pointer;
+}
